@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>home</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!--Link to master css file-->
+  <link rel="stylesheet" href="css/master.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="collapse navbar-collapse" id="nav">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="index.html">Home</a>
+      <a class="nav-item nav-link" href="profile.html">User Information</a>
+      <a class="nav-item nav-link" href="table_of_books.html">Table of Books</a>
+    </div>
+  </div>
+  </nav>
+</head>
+  <body>
+    <p><table class="table" align="center">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Title</th>
+          <th scope="col">Author(s)</th>
+          <th scope="col">Year Published</th>
+          <th scope="col">Publisher</th>
+          <th scope="col">Page Count</th>
+          <th scope="col">MSRP</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>The Grapes of Wrath</td>
+          <td>John Steinbeck</td>
+          <td>1939</td>
+          <td>Penguin Classics</td>
+          <td>455</td>
+          <td>$14.00</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Britain's 100 Best Railway Stations</td>
+          <td>Simon Jenkins</td>
+          <td>2018</td>
+          <td>Penguin UK</td>
+          <td>336</td>
+          <td>$15.87</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Railway Depots, Stations & Terminals</td>
+          <td>Brian Solomon</td>
+          <td>2015</td>
+          <td>Voyageur Press</td>
+          <td>176</td>
+          <td>$26.89</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>The Lost Art of Closing: Winning the Ten Commitments That Drive Sales</td>
+          <td>Anthony Iannarino</td>
+          <td>2017</td>
+          <td>Portfolio</td>
+          <td>240</td>
+          <td>$14.63</td>
+        </tr>
+      </tbody>
+      </table></p>
+      <form align="center" class="form">
+        <div class="form-group">
+          <label for="Title"></label>
+          <input type="string" name="Title" placeholder="Title">
+        </div>
+        <div class="form-group">
+          <label for="Author"></label>
+          <input type="string" name="Author" placeholder="Author(s)">
+        </div>
+        <div class="form-group">
+          <label for="Year_Published"></label>
+          <input type="integer" name="Year_Published" placeholder="Year Published">
+        </div>
+        <div class="form-group">
+          <label for="Year_Published"></label>
+          <input type="string" name="Publisher" placeholder="Publisher">
+        </div>
+        <div class="form-group">
+          <label for="Year_Published"></label>
+          <input type="integer" name="Page_Count" placeholder="Page Count">
+        </div>
+        <div class="form-group">
+          <label for="Year_Published"></label>
+          <input type="currency" name="MSRP" placeholder="MSRP">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+  </body>
+</html>
