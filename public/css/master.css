@@ -9,7 +9,6 @@ img:hover {
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
-/**
 thead{
   background-color: firebrick;
   color: white;
@@ -24,7 +23,6 @@ tfoot{
   .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
     border-top: 1px solid firebrick;
   }
-**/
 
 .table{
   width:75%;
