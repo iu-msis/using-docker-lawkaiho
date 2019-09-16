@@ -27,8 +27,15 @@
   </nav>
 </head>
   <body>
-    <center><a href="https://randomuser.me/api/portraits/men/27.jpg">
-      <img class="rounded-circle img-thumbnail" src="https://randomuser.me/api/portraits/men/27.jpg"></a>
+    <div class="container" id="userWaitingApp">
+      <template v-if="users.results">
+      <div class="row">
+        <div id="user userWaitingApp" class="col-md-3 queueView">
+
+          <div class="user userWaiting">
+
+    <center><a v-bind:href="users.results[0].picture.large">
+      <img class="rounded-circle img-thumbnail" v-bind:src="users.results[0].picture.large"></a>
       <p><cite>https://randomuser.me</cite></p>
     <p><table class="table">
       <thead>
@@ -36,25 +43,37 @@
       <tbody>
         <tr>
           <th scope="row">Name</th>
-          <td>Mark Thornton</td>
+          <td><p>{{ users.results[0].name.first }} {{ users.results[0].name.last }}</p></td>
         </tr>
         <tr>
           <th scope="row">Country of Origin</th>
-          <td>New Zealand</td>
+          <td>{{ users.results[0].nat }}</td>
         </tr>
         <tr>
           <th scope="row">Birthdate</th>
-          <td>08/21/2000</td>
+          <td>{{ users.results[0].dob.date }}</td>
         </tr>
         <tr>
           <th scope="row">Age</th>
-          <td>19</td>
+          <td>{{ users.results[0].dob.age }}</td>
         </tr>
         <tr>
           <th scope="row">Email Address</th>
-          <td><a href="mailto:markthornton@gmail.com">markthornton@gmail.com</a></td>
+          <td><a v-bind:href="'mailto:'+users.results[0].email">{{ users.results[0].email }}</a></td>
         </tr>
       </tbody>
     </table></p>
+                <!-- Arrival date<br>
+                <span class="userName">{{ user.lastName }}</span>,
+                <span class="userName">{{ user.firstName }}</span><br>
+                {{ user.sexAtBirth }} {{ patient.dob }}
+                <p>{{ users.results[0].name.first }} {{ users.results[0].name.last }}</p>-->
+              </div>
+            </div>
+          </div>
+        </template>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="js/waiting.app.js"></script>
   </body>
 </html>
