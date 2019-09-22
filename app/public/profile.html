@@ -73,6 +73,13 @@
           </div>
         </template>
         </div>
+        <div class="container center">
+          <form v-on:submit.prevent="redreshData">
+            <button type="submit" class="btn btn-primary">
+              Refresh
+            </button>
+          </form>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script src="js/waiting.app.js"></script>
   </body>
